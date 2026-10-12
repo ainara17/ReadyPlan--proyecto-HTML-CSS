@@ -23,4 +23,4 @@ Breve resumen de cómo se ha planteado el desarrollo:
 * Uso de selectores básicos y combinados.
 * Uso de diferentes valores de Display y Position.
 ## Autor
-* **Ainara Uranga** - [(https://github.com/ainara17)]
+* **Ainara Uranga** - [https://github.com/ainara17]
