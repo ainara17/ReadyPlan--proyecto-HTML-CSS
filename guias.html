@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readyplan</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/variantes.css">
+    <link rel="stylesheet" href="./css/guiaStyles.css">
+</head>
+
+<body>
+
+    <header class="main__header">
+        <h1>Guías de emergencia</h1>
+        <div class="badge">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-award">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M6 9a6 6 0 1 0 12 0a6 6 0 1 0 -12 0" />
+                <path d="M12 15l3.4 5.89l1.598 -3.233l3.598 .232l-3.4 -5.889" />
+                <path d="M6.802 12l-3.4 5.89l3.598 -.233l1.598 3.232l3.4 -5.889" />
+            </svg>
+            <p class="badge__text">0 puntos</p>
+        </div>
+
+
+
+    </header>
+
+    <aside class="sidebar">
+
+        <img id="logo" src="./assets/logo.jpeg" alt="icono">
+
+        <nav class="navbar">
+
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-apple-arcade">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 5a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                            <path
+                                d="M20 12.5v4.75a.734 .734 0 0 1 -.055 .325a.704 .704 0 0 1 -.348 .366l-5.462 2.58a5 5 0 0 1 -4.27 0l-5.462 -2.58a.705 .705 0 0 1 -.401 -.691l0 -4.75" />
+                            <path
+                                d="M4.431 12.216l5.634 -2.332a5.065 5.065 0 0 1 3.87 0l5.634 2.332a.692 .692 0 0 1 .028 1.269l-5.462 2.543a5.064 5.064 0 0 1 -4.27 0l-5.462 -2.543a.691 .691 0 0 1 .028 -1.27" />
+                            <path d="M12 7l0 6" />
+                        </svg>
+                        <p>Simulación</p>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link nav__item--active" href="guias.html">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-notebook">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" />
+                            <path d="M13 8l2 0" />
+                            <path d="M13 12l2 0" />
+                        </svg>
+
+                        <p>Aprender</p>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="./plan.html">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-checklist">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M9.615 20h-2.615a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8" />
+                            <path d="M14 19l2 2l4 -4" />
+                            <path d="M9 8h4" />
+                            <path d="M9 12h2" />
+                        </svg>
+
+                        <p>Tu plan</p>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+
+    </aside>
+
+    <main class="content__guias">
+        <header>
+            <div class="info__kit">
+                <p>Kit 72h UE</p>
+                <h2>¿Tienes todo en tu kit para sobrevivir?</h2>
+                <button><a href="https://www.youtube.com/watch?v=0xU3CTPWxl0">Saber más</a></button>
+            </div>
+            <form class="search__container" action="/search" method="GET" role="search">
+                <label for="search-bar" class="visually__hidden">Buscar</label>
+
+                <input type="search" id="search-bar" name="search-bar" placeholder="Busca cualquier duda..." required>
+                <button type="submit" class="search-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                        <path d="M21 21l-6 -6" />
+                    </svg>
+                </button>
+            </form>
+
+
+        </header>
+        <section class="card__guia--collection">
+            <article class="card card__guia">
+
+                <header class="card__guia--header">
+                    <span class="card__guia--tag">Habilidades</span>
+                    <img src="./assets/hornillo_lata.jpeg" alt="Ilustracion de hornillo hecho con una lata reciclada"
+                        class="blog-card__image" loading="lazy">
+                </header>
+
+
+                <div class="card__guia--body">
+
+
+                    <h3 class="card_guia--title">
+                        <a href="/articulo-url" class="blog-card__link">
+                            Estufa de emergencia con una lata de atún
+                        </a>
+                    </h3>
+
+
+                </div>
+
+
+            </article>
+
+            <article class="card card__guia">
+
+                <header class="card__guia--header">
+                    <span class="card__guia--tag">Rescate</span>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCQ7HD-MfTpmP8lXRxu_qbHQmeqIWUJN-wl5HIsrxhVw&s=10"
+                        alt="Helicoptero" class="blog-card__image" loading="lazy">
+                </header>
+
+
+                <div class="card__guia--body">
+
+
+                    <h3 class="card_guia--title">
+                        <a href="/articulo-url" class="blog-card__link">
+                            Códigos visuales para helicópteros
+                        </a>
+                    </h3>
+
+
+                </div>
+
+
+
+
+
+            </article>
+            <article class="card card__guia">
+
+                <header class="card__guia--header">
+                    <span class="card__guia--tag">Rescate</span>
+                    <img src="./assets/forzar_puertas_escombros.jpeg"
+                        alt="Ilustración de bomberos abriendo puertas bloqueadas" class="blog-card__image"
+                        loading="lazy">
+                </header>
+
+
+                <div class="card__guia--body">
+
+
+                    <h3 class="card_guia--title">
+                        <a href="/articulo-url" class="blog-card__link">
+                            Cómo forzar puertas bloqueadas por escombros
+                        </a>
+                    </h3>
+
+
+                </div>
+
+
+            </article>
+            <article class="card card__guia">
+
+                <header class="card__guia--header">
+                    <span class="card__guia--tag">Suministros</span>
+                    <img src="https://img.magnific.com/vector-gratis/composicion-isometrica-sistema-filtracion-agua-grifo-ilustracion-3d-coloreada_1284-62034.jpg?semt=ais_hybrid&w=740&q=80"
+                        alt="Sistema de filtrado de agua" class="blog-card__image" loading="lazy">
+                </header>
+
+
+                <div class="card__guia--body">
+
+
+                    <h3 class="card_guia--title">
+                        <a href="/articulo-url" class="blog-card__link">
+                            Construye un filtro de agua de 3 etapas
+                        </a>
+                    </h3>
+
+
+                </div>
+
+
+            </article>
+            <article class="card card__guia">
+
+                <header class="card__guia--header">
+                    <span class="card__guia--tag">Rescate</span>
+                    <img src="https://image.made-in-china.com/202f0j00lhqbusOZwPom/Multifunctional-Whistle-7-in-1-Survival-Bushcraft-Trekking-Compass-Mirror-Torch-Magnifier-LED-Light-Thermometer-Whistle-Outdoor-Survival-Camping-Hiking.webp"
+                        alt="silbato de emergencia" class="blog-card__image" loading="lazy">
+                </header>
+
+
+                <div class="card__guia--body">
+
+
+                    <h3 class="card_guia--title">
+                        <a href="/articulo-url" class="blog-card__link">
+                            Señales de socorro con espejo y silbato
+                        </a>
+                    </h3>
+
+
+                </div>
+
+            </article>
+
+
+            <article class="card card__guia">
+
+                <header class="card__guia--header">
+                    <span class="card__guia--tag">Salud</span>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlxhJeJDVnlMYbeCplSPHZPArX8SyA6ozbZ_ActuVn8L3nnrvYa50aYZyz&s=10"
+                        alt="Vendaje basico" class="blog-card__image" loading="lazy">
+                </header>
+
+
+                <div class="card__guia--body">
+
+
+                    <h3 class="card_guia--title">
+                        <a href="/articulo-url" class="blog-card__link">
+                            Empaquetamiento de heridas: Guía técnica
+                        </a>
+                    </h3>
+
+
+                </div>
+
+            </article>
+
+
+
+        </section>
+        <section class="kit__ue" aria-labelledby="kit-title">
+
+            <header class="kit__header">
+                <svg class="kit__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-backpack">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M5 18v-6a6 6 0 0 1 6 -6h2a6 6 0 0 1 6 6v6a3 3 0 0 1 -3 3h-8a3 3 0 0 1 -3 -3" />
+                    <path d="M10 6v-1a2 2 0 1 1 4 0v1" />
+                    <path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4" />
+                    <path d="M11 10h2" />
+                </svg>
+                </svg>
+                <div>
+                    <h2 class="kit__title" id="kit-title">Kit de emergencia</h2>
+                    <p class="kit__subtitle">Recomendación UE · 72 h</p>
+                </div>
+            </header>
+
+            <p class="kit__intro">Lo básico para tres días por tu cuenta.</p>
+
+            <ul class="kit__list">
+                <li class="kit__item"><svg class="kit__item-icon" aria-hidden="true">
+                        <use href="#icon-droplet" />
+                    </svg>Agua</li>
+                <li class="kit__item"><svg class="kit__item-icon" aria-hidden="true">
+                        <use href="#icon-apple" />
+                    </svg>Comida no perecedera</li>
+                <li class="kit__item"><svg class="kit__item-icon" aria-hidden="true">
+                        <use href="#icon-flashlight" />
+                    </svg>Linterna y pilas</li>
+                <li class="kit__item"><svg class="kit__item-icon" aria-hidden="true">
+                        <use href="#icon-radio" />
+                    </svg>Radio a pilas</li>
+                <li class="kit__item"><svg class="kit__item-icon" aria-hidden="true">
+                        <use href="#icon-first-aid-kit" />
+                    </svg>Botiquín</li>
+                <li class="kit__item"><svg class="kit__item-icon" aria-hidden="true">
+                        <use href="#icon-file-text" />
+                    </svg>Documentos</li>
+            </ul>
+
+            <a class="kit__link" href="https://www.youtube.com/watch?v=0xU3CTPWxl0">Leer la ficha completa</a>
+
+
+
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+/* ------------------------------------------------------
+                    Header / search
+---------------------------------------------------------*/
+.visually__hidden {
+  visibility: hidden;
+  position: absolute;
+}
+
+.search__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  grid-area: search;
+
+  input {
+    padding: 6px 12px;
+    border-radius: 99px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    width: 70%;
+
+    height: 36px;
+
+  }
+}
+
+.search-input::placeholder {
+  color: #94a3b8;
+}
+
+
+.search-button {
+  background-color: var(--primary-cta);
+  color: var(--text-dark);
+  border: none;
+  outline: none;
+  padding: 4px 16px;
+  border-radius: 99px;
+  cursor: pointer;
+
+}
+
+
+/* ------------------------------------------------------
+                    Kit de emergencia mobile
+---------------------------------------------------------*/
+
+.info__kit {
+  background-color: var(--bg-dark);
+  margin: 16px;
+  padding: 16px;
+  border-radius: 16px;
+  color: var(--text-light);
+
+  button {
+    background-color: var(--primary-cta);
+    padding: 8px;
+    border-radius: var(--border-radius-medium);
+    border: none;
+    right: 0;
+
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  p {
+    color: var(--text-light);
+    font-size: 18px;
+  }
+}
+
+/* ------------------------------------------------------
+                    Kit de emergencia desktop
+---------------------------------------------------------*/
+.kit__ue {
+  display: none;
+
+}
+
+.kit__header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.kit__icon {
+  flex: none;
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
+  padding: 7px;
+  border-radius: 9px;
+  background: var(--primary-light);
+  fill: none;
+  stroke: var(--text-dark);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.kit__title {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.kit__subtitle {
+  margin: 0;
+  font-size: 11px;
+  color: #55641A;
+}
+
+.kit__intro {
+  margin: 10px 0 4px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.kit__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.kit__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 34px;
+  border-bottom: var(--border-dark);
+  font-size: 12px;
+}
+
+.kit__item:last-child {
+  border-bottom: 0;
+}
+
+.kit__item-icon {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: var(--text-dark);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.kit__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: var(--primary-cta);
+  color: var(--text-dark);
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+
+
+/* ------------------------------------------------------
+                   lista de cards 
+---------------------------------------------------------*/
+
+.card__guia--header img {
+  width: 100%;
+  border-radius: 8px;
+
+
+}
+
+.card__guia:hover {
+  border: 1px solid var(--primary-cta);
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: var(--primary-light);
+}
+
+.card__guia--tag {
+  position: absolute;
+  background-color: #fff;
+  padding: 4px 8px 4px 8px;
+  border-radius: 16px;
+  font-size: 12px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+.card__guia a {
+  text-decoration: none;
+  color: var(--text-dark);
+}
+
+
+
+
+/* ------------------------------------------------------
+                        Estilos para desktop
+    ---------------------------------------------------------*/
+
+
+
+@media (min-width:768px) {
+  .info__kit {
+    display: none;
+  }
+
+  .kit__ue {
+    display: block;
+    grid-area: kit;
+    background-color: var(--card-bg);
+    padding: 16px;
+    margin: 1rem;
+    border-radius: 16px;
+  }
+
+  .card__guia--collection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .content__guias {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "search kit"
+      "cards kit";
+
+  }
+
+  .card__guia--collection {
+    grid-area: cards;
+  }
+
+
+}

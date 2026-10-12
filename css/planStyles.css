@@ -1,0 +1,128 @@
+main {
+    height: 100%;
+}
+
+/* ------------------------------------------------------
+                        Estilos para form
+---------------------------------------------------------*/
+
+form {
+    width: 100vw;
+}
+
+fieldset {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    border: var(--border-dark);
+}
+
+
+
+legend {
+    background-color: var(--card-bg);
+    border: 1px solid var(--bg-dark);
+    padding: 8px;
+
+    border-radius: 6px;
+
+}
+
+.checkbox__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.persons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 8px;
+}
+
+.checkbox__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    gap: 8px;
+
+}
+
+
+.persons input {
+    width: 48px;
+
+}
+
+
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+label {
+    display: block;
+}
+
+button {
+    width: 92%;
+    background-color: var(--primary-cta);
+    color: var(--text-dark);
+    padding: 14px;
+    margin: 8px 1rem 150px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--pr);
+}
+
+
+/* ------------------------------------------------------
+                        Estilos para desktop
+---------------------------------------------------------*/
+
+@media (min-width:768px) {
+    .content__plan {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        width: 40%;
+
+    }
+
+    button {
+        width: auto;
+        font-size: 18px;
+
+
+    }
+
+}

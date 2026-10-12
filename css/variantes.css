@@ -1,0 +1,52 @@
+:root {
+
+/* -----------------------------------------------------
+                    Colores generales
+---------------------------------------------------------*/
+    --bg-dark: #201E31;
+    --black: #17161C;
+    --bg-general: #F8F8F6;
+    --card-bg: #FFFFFF;    
+    --border-color: #D1D5DB;
+
+
+
+    --text-dark: #201E31;
+    --text-light:#D7D6DA ;
+    --text-secondary: #5A5860;
+
+
+    --alert-yellow-light: #FCD34D;
+    --alert-orange-light: #FDBA74;
+    --alert-red-light: #FCA5A5;
+    --alert-yellow: #F7D154;
+    --alert-orange: #F5A524;
+    --alert-red: #D9382F;
+    --alert-green: #DCFCE7;
+    --alert-green-light: #86EFAC;
+  
+
+    --primary-cta: #D8F275;
+    --primary-light: #F2FACF;
+    --primary-chip: #EDF3C8;
+   
+    
+    --lavender-100: #DFDFF4;
+    --lavender-200: #DDDEF2;
+    --lila-300: #BFACEF;
+    
+/* -----------------------------------------------------
+                    Bordes generales
+---------------------------------------------------------*/
+    --border-dark: 1px solid var(--border-color);
+    --border-light: 1px solid var(--bg-general);
+
+
+    --border-radius-small: 8px;
+    --border-radius-medium: 16px;
+    --border-radius-big: 999px;
+    
+    
+    
+
+}

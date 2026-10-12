@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readyplan</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/variantes.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="main__header">
+        <h1>Simulación</h1>
+        <div class="badge">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-award">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M6 9a6 6 0 1 0 12 0a6 6 0 1 0 -12 0" />
+                <path d="M12 15l3.4 5.89l1.598 -3.233l3.598 .232l-3.4 -5.889" />
+                <path d="M6.802 12l-3.4 5.89l3.598 -.233l1.598 3.232l3.4 -5.889" />
+            </svg>
+            <p class="badge__text">0 puntos</p>
+        </div>
+
+
+
+    </header>
+
+    <aside class="sidebar">
+
+        <img id="logo" src="./assets/logo.jpeg" alt="icono">
+
+        <nav class="navbar">
+
+            <ul class="nav__list">
+                <li class="nav__item nav__item--active">
+                    <a class="nav__link" href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-apple-arcade">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 5a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                            <path
+                                d="M20 12.5v4.75a.734 .734 0 0 1 -.055 .325a.704 .704 0 0 1 -.348 .366l-5.462 2.58a5 5 0 0 1 -4.27 0l-5.462 -2.58a.705 .705 0 0 1 -.401 -.691l0 -4.75" />
+                            <path
+                                d="M4.431 12.216l5.634 -2.332a5.065 5.065 0 0 1 3.87 0l5.634 2.332a.692 .692 0 0 1 .028 1.269l-5.462 2.543a5.064 5.064 0 0 1 -4.27 0l-5.462 -2.543a.691 .691 0 0 1 .028 -1.27" />
+                            <path d="M12 7l0 6" />
+                        </svg>
+                        <p>Simulación</p>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="guias.html">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-notebook">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" />
+                            <path d="M13 8l2 0" />
+                            <path d="M13 12l2 0" />
+                        </svg>
+
+                        <p>Aprender</p>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="plan.html">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-checklist">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M9.615 20h-2.615a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8" />
+                            <path d="M14 19l2 2l4 -4" />
+                            <path d="M9 8h4" />
+                            <path d="M9 12h2" />
+                        </svg>
+
+                        <p>Tu plan</p>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+
+    </aside>
+
+    <main class="main__content">
+        <section class="card card--context">
+            <header class="context__header">
+
+                <div>
+
+                    <p class="context__time">
+                        30 min
+                    </p>
+                    <p class="context__caption">para que el río llegue a su máximo</p>
+
+                </div>
+
+
+                <p class="badge badge--alert-orange">Aviso naranja</p>
+
+            </header>
+
+            <div class="level">
+                <p class="level__text">Nivel del río <strong>Alto, subiendo</strong></p>
+                <div class="level__bar" aria-hidden="true">
+                    <span class="level__marker"></span>
+                </div>
+
+            </div>
+
+
+            <h3 class="context__subtitle">Última actualización</h3>
+            <ol class="alerts">
+
+
+                <li class="alerts__item alerts__item--orange alerts__item--current">
+                    <p class="alerts__title"><time datetime="20:05">20:05</time> Evita desplazamientos innecesarios.</p>
+                </li>
+                <li class="alerts__item alerts__item--orange">
+                    <p class="alerts__title"><time datetime="19:45">19:45</time> Evita las zonas cercanas al río.</p>
+
+                </li>
+                <li class="alerts__item alerts__item--green">
+                    <p class="alerts__title"><time datetime="18:30">18:30</time> Infórmate y sigue la evolución.</p>
+
+                </li>
+
+
+            </ol>
+
+        </section>
+
+
+        <section class="card card--user">
+
+            <div class="user__info">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0" />
+                </svg>
+                <p class="label__text">Dónde</p>
+                <p class="user__context">Casa</p>
+            </div>
+
+            <div class="user__info">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-users">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M5 7a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                </svg>
+                <p class="label__text">Con quién</p>
+                <p class="user__context">Solo</p>
+            </div>
+
+            <div class="user__info">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-walk">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12 4a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                    <path d="M7 21l3 -4" />
+                    <path d="M16 21l-2 -4l-3 -3l1 -6" />
+                    <path d="M6 12l2 -3l4 -1l3 3l3 1" />
+                </svg>
+                <p class="label__text">Movilidad</p>
+                <p class="user__context">Normal</p>
+            </div>
+
+            <div class="user__info">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-heartbeat">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M19.5 13.572l-7.5 7.428l-2.896 -2.868m-6.117 -8.104a5 5 0 0 1 9.013 -3.022a5 5 0 1 1 7.5 6.572" />
+                    <path d="M3 13h2l2 3l2 -6l1 3h3" />
+                </svg>
+                <p class="label__text">Salud</p>
+                <p class="user__context">100%</p>
+            </div>
+
+
+        </section>
+
+        <section class="card card--decision">
+            <article class="decision__header">
+                <div class="decision__count">
+                    <p>Decisión 1 de 3</p>
+                    <div class="progress" aria-hidden="true">
+                        <span class="progress__step progress__step--done"></span>
+                        <span class="progress__step"></span>
+                        <span class="progress__step"></span>
+                    </div>
+
+
+                </div>
+                <h3>¿Qué vas a hacer?</h3>
+            </article>
+            <article class="answers">
+                <div class="answer__opt">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-stairs-up">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M22 6h-5v5h-5v5h-5v5h-5" />
+                        <path d="M6 10v-7" />
+                        <path d="M3 6l3 -3l3 3" />
+                    </svg>
+
+                    <p>Subir a la planta superior</p>
+                </div>
+                <div class="answer__opt">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-droplet">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M7.502 19.423c2.602 2.105 6.395 2.105 8.996 0c2.602 -2.105 3.262 -5.708 1.566 -8.546l-4.89 -7.26c-.42 -.625 -1.287 -.803 -1.936 -.397a1.376 1.376 0 0 0 -.41 .397l-4.893 7.26c-1.695 2.838 -1.035 6.441 1.567 8.546" />
+                    </svg>
+                    <p>Bajar al garaje a por agua y comida</p>
+                </div>
+                <div class="answer__opt">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-car">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M5 17a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M15 17a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5" />
+                    </svg>
+                    <p>Coger el coche para moverte a un punto elevado</p>
+                </div>
+                <div class="answer__opt">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-walk">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M12 4a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                        <path d="M7 21l3 -4" />
+                        <path d="M16 21l-2 -4l-3 -3l1 -6" />
+                        <path d="M6 12l2 -3l4 -1l3 3l3 1" />
+                    </svg>
+                    <p>Ir a casa de la abuela para ver si esta bien</p>
+                </div>
+            </article>
+            <div class="btn__group">
+
+                <button class="decision__btn decision__btn--ant">Anterior</button>     
+                <button class="decision__btn decision__btn--sig">Siguiente</button> 
+
+            </div>
+
+        </section>
+
+
+        <section class="card card--supplies">
+            <details class="dropdown">
+                <summary class="dropdown__summary">
+                    <div class="dropdown__title">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-backpack">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M5 18v-6a6 6 0 0 1 6 -6h2a6 6 0 0 1 6 6v6a3 3 0 0 1 -3 3h-8a3 3 0 0 1 -3 -3" />
+                            <path d="M10 6v-1a2 2 0 1 1 4 0v1" />
+                            <path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4" />
+                            <path d="M11 10h2" />
+                        </svg>
+                        <h3>Suministros · kit 72h</h3>
+                    </div>
+                    <div class="dropdown__meta">
+                        <p>2 de 5</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M6 9l6 6l6 -6" />
+                        </svg>
+
+                    </div>
+
+
+                </summary>
+                <article class="dropdown__content">
+
+                    <ul class="supplies">
+                        <li class="supplies__item">
+                            <p>Agua</p>
+                            <span class="tag__supplie tag__supplie--ok">2l</span>
+                        </li>
+                        <li class="supplies__item">
+                            <p>Linterna y pilas</p>
+                            <span class="tag__supplie tag__supplie--ok">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-check">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5 12l5 5l10 -10" />
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="supplies__item">
+                            <p>Botiquín</p>
+                            <span class="tag__supplie  tag__supplie--check">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-question-mark">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M8 8a3.5 3 0 0 1 3.5 -3h1a3.5 3 0 0 1 3.5 3a3 3 0 0 1 -2 3a3 4 0 0 0 -2 4" />
+                                    <path d="M12 19l0 .01" />
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="supplies__item">
+                            <p>Radio a pilas</p>
+                            <span class="tag__supplie  tag__supplie--missing">
+                                <p>Falta</p>
+                            </span>
+                        </li>
+                        <li class="supplies__item">
+                            <p>Comida no perecedera</p>
+                            <span class="tag__supplie  tag__supplie--missing">
+                                <p>Falta</p>
+                            </span>
+                        </li>
+                    </ul>
+
+                </article>
+            </details>
+        </section>
+        <section class="card card--logros"> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-medal-2"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 3h6l3 7l-6 2l-6 -2l3 -7" /><path d="M12 12l-3 -9" /><path d="M15 11l-3 -8" /><path d="M12 19.5l-3 1.5l.5 -3.5l-2 -2l3 -.5l1.5 -3l1.5 3l3 .5l-2 2l.5 3.5l-3 -1.5" /></svg>
+            <p>No has ganado ninguna medalla aún</p>
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>
